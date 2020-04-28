@@ -21,7 +21,7 @@ footer {
     min-width: 210px;
 }
 
-#contact, .contact-form h1 {
+#contact, .contact-form h1, .navbar-collapse.ml-auto.text-right.collapse {
     color: #00AA55 !important;
 }
 
