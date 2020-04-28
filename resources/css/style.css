@@ -1,0 +1,57 @@
+body, h1, h2 {
+    color: #002627 !important;
+}
+
+hr {
+    border-top: 1px solid rgba(0,38,39,.1) !important;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    color: #00AA55;
+    height: 4rem;
+    padding: 1.25rem 0 1.75rem 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    max-width: 30%;
+    min-width: 210px;
+}
+
+#contact, .contact-form h1 {
+    color: #00AA55 !important;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+}
+
+#jumbotron {
+    background-color: rgba(0, 170, 85, 0.5);
+}
+
+/* #jumbotron > * {
+     color: #002627; 
+} */
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+      color: #00AA55;
+  }
+
+nav .navbar-nav li a:hover{
+    color: #002627 !important;
+}
+
+nav .navbar-nav li a{
+    color: #00AA55 !important;
+}
+
+.img-small {
+    width: 80% !important;
+    align-self: center;
+} 
