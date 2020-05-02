@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="./resources/images/favicon.ico"/>
+    <link rel="icon" type="image/png" href="./resources/images/favicon.ico" />
     <title>Outsiders - paintball team</title>
 </head>
 
@@ -319,46 +319,59 @@
 
             </div>
             <!-- Grid column -->
-            
+
         </div>
         <!-- Grid row -->
         <hr>
         <!-- Contact section -->
         <div id="contact" class="container container-fluid p-3 my-5  bg-dark">
-                <div class="col-md-8 col-md-offset-2 m-auto">
-                    <div class="contact-form">
-                        <h1 class="text-center my-4">Get in Touch</h1>
-                        <form class="my-4" action="javascript:sendEmail();" method="post">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="inputName">Name</label>
-                                        <input type="text" class="form-control" id="inputName" required>
-                                    </div>
+            <div class="col-md-8 col-md-offset-2 m-auto">
+                <div class="contact-form">
+                    <h1 class="text-center my-4">Get in Touch</h1>
+                    <form class="my-4" action="javascript:sendEmail();" method="post">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="inputName">Name</label>
+                                    <input type="text" class="form-control" id="inputName" required>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="inputEmail">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail" required>
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" required>
                                 </div>
-                            </div>            
-                            <div class="form-group">
-                                <label for="inputSubject">Subject</label>
-                                <input type="text" class="form-control" id="inputSubject" required>
                             </div>
-                            <div class="form-group mb-4">
-                                <label for="inputMessage">Message</label>
-                                <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputSubject">Subject</label>
+                            <input type="text" class="form-control" id="inputSubject" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="inputMessage">Message</label>
+                            <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <div id="wait-alert" class="alert alert-dark d-none" role="alert">
+                                Sending email!<br>Please wait...
                             </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-secondary btn-lg btn-block"><i class="fa fa-paper-plane"></i> Send</button>
-                            </div>            
-                        </form>
-                    </div>
+                            <div id="success-alert" class="alert alert-success d-none" role="alert">
+                                <h4 class="alert-heading">Thank you!</h4>
+                                <p>Your message has been successfully sent.</p>
+                                <hr>
+                                <p class="mb-0">We will contact you very soon!</p>
+                            </div>
+                            <div id="danger-alert" class="alert alert-danger d-none" role="alert">
+                                Sorry, something went wrong there.<br>Please try again.
+                            </div>
+                            <button type="submit" class="btn btn-secondary btn-lg btn-block my-4 font-weight-bold"><i
+                                    class="fa fa-paper-plane"></i>Send</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Footer -->
@@ -367,14 +380,17 @@
     <!-- Bootstrap's JavaScript Files -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- TODO -->
+    <!-- <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
     <script src='./resources/js/script.js'></script>
     <script src='./resources/js/modal.js'></script>
     <script src='./resources/js/mailSender.js'></script>
