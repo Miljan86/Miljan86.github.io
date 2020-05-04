@@ -69,3 +69,14 @@ nav .navbar-nav li a{
 .navbar-toggler.navbar-toggler {
     border-color: rgb(0,170,85) !important;
 } 
+
+.btn-outline-secondary {
+    color: #00AA55 !important;
+    border-color: #00AA55 !important;
+}
+
+.btn-outline-secondary:hover {
+    color: rgba(0,170,85,0.6) !important;
+    background-color: transparent !important;
+    border-color: rgba(0,170,85,0.6) !important;
+}
