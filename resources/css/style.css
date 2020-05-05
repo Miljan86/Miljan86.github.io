@@ -38,10 +38,6 @@ footer {
     background-color: rgba(0, 170, 85, 0.5);
 }
 
-/* #jumbotron > * {
-     color: #002627; 
-} */
-
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
     color: #00AA55;
@@ -80,3 +76,88 @@ nav .navbar-nav li a{
     background-color: transparent !important;
     border-color: rgba(0,170,85,0.6) !important;
 }
+
+.bg-black {
+    background-color: #000000 !important;
+}
+
+.h-custom {
+    height: 70px;
+}
+
+/* Back to top btn - start */
+#topBtn {
+    width: 60px; 
+    height: 60px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 9999; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-image: url("../../resources/images/back_to_top_btn/back_to_the_top.png"); /* Set a background color */
+    background-size: 100%;
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #topBtn:hover {
+    background-image: url("../../resources/images/back_to_top_btn/back_to_the_top_hover.png");
+    opacity: 100%;
+  }
+  /* Back to top btn - end */
+
+
+  /* Header - start */
+  header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00AA55;
+    opacity: 0.1;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('./resources/images/Speedball-Field-1.jpg') black no-repeat center center scroll;
+    }
+  }
+  /* Header - end */
+
+
