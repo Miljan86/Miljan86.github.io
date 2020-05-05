@@ -155,7 +155,7 @@ nav .navbar-nav li a{
   
   @media (pointer: coarse) and (hover: none) {
     header {
-      background: url("./resources/images/./resources/images/Paintball Team Outsiders - poster.jpg") black no-repeat center center scroll;
+      background: url("./resources/images/Paintball Team Outsiders - poster.jpg") black no-repeat center center scroll;
     }
   }
   /* Header - end */
