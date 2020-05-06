@@ -102,4 +102,18 @@
     cursor: pointer;
     filter: none;
   }
+
+  .play-xs {
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 33%;    
+  }
+
+  .play-xs img {
+      width: 20%;
+  }
   /* Modal : video - end */
