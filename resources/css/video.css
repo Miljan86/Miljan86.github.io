@@ -10,7 +10,7 @@
   .content .content-overlay {
     position: absolute;
     background: rgba(0, 0, 0, 0.7);
-    height: 99%;
+    height: 100%;
     width: 100%;
     left: 0;
     top: 0;
@@ -75,6 +75,10 @@
     font-size: 0.8em;
   }
   
+  .content-details > img {
+    width: 20%;
+  }
+
   .fadeIn-left {
     left: 20%;
   }
