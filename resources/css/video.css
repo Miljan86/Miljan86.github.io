@@ -1,0 +1,101 @@
+/* Modal : video - start */
+.content {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  
+  .content .content-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay {
+    opacity: 1;
+  }
+  
+  .content-image {
+    width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .content-image:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  .content-details {
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .content-details > h3 {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  
+  .content-details > p {
+    color: #fff;
+    font-size: 0.8em;
+  }
+  
+  .fadeIn-left {
+    left: 20%;
+  }
+  
+  .fadeIn-top {
+    top: 20%;
+  }
+  
+  .opacity {
+    -webkit-filter: opacity(50%);
+    filter: none;
+  }
+  
+  .container a img.brightness:hover {
+    -webkit-filter: brightness(1);
+    filter: none;
+  }
+  
+  img:hover {
+    -webkit-filter: none;
+    cursor: pointer;
+    filter: none;
+  }
+  /* Modal : video - end */
