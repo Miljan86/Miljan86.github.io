@@ -1,3 +1,18 @@
+// Mute - start
+$("video").prop('muted', true);
+$("#mute").css("background-image", "url('./resources/images/mute_btn/mute.png')");
+
+$("#mute").click( function (){
+    if( $("video").prop('muted') ) {
+        $("video").prop('muted', false);
+        $("#mute").css("background-image","url('./resources/images/mute_btn/unmute.png')");
+    } else {
+        $("video").prop('muted', true);
+        $("#mute").css("background-image","url('./resources/images/mute_btn/mute.png')");
+    }
+});
+// Mute - start
+
 // Scroll - start
 function goToTop() {
     document.body.scrollTop = 0; // For Safari
@@ -29,7 +44,6 @@ $(window).scroll(function () {
     });
 });
 // Scroll - end
-
 
 // Cards - strat
 var $cards = $('.card-object'),
