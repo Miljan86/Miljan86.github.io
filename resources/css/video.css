@@ -119,4 +119,15 @@
       opacity: 1;
     }
   }
+
+  #mute{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-size: cover;
+    z-index: 2;
+  }
   /* Modal : video - end */
