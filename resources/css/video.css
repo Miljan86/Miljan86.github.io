@@ -75,7 +75,7 @@
     font-size: 0.8em;
   }
   
-  .content-details > img {
+  .content-details > img, .play-xs img {
     width: 20%;
   }
 
@@ -111,9 +111,12 @@
     padding-right: 1em;
     width: 100%;
     top: 33%;    
+    opacity: 0;
   }
 
-  .play-xs img {
-      width: 20%;
+  @media (pointer: coarse) and (hover: none) {
+    .play-xs {
+      opacity: 1;
+    }
   }
   /* Modal : video - end */
