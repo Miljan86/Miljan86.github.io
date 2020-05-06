@@ -165,4 +165,15 @@ header .overlay {
       no-repeat center center scroll;
   }
 }
+
+#mute{
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-size: cover;
+  z-index: 3;
+}
 /* Header - end */
