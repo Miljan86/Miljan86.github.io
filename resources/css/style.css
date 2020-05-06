@@ -8,6 +8,10 @@ h2 {
   color: #002627 !important;
 }
 
+img {
+    pointer-events: none;
+}
+
 hr {
   border-top: 1px solid rgba(0, 38, 39, 0.1) !important;
 }
