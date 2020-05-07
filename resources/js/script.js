@@ -2,13 +2,13 @@
 $("video").prop('muted', true);
 $("#mute").css("background-image", "url('./resources/images/mute_btn/mute.png')");
 
-$("#mute").click( function (){
-    if( $("video").prop('muted') ) {
+$("#mute").click(function() {
+    if ($("video").prop('muted')) {
         $("video").prop('muted', false);
-        $("#mute").css("background-image","url('./resources/images/mute_btn/unmute.png')");
+        $("#mute").css("background-image", "url('./resources/images/mute_btn/unmute.png')");
     } else {
         $("video").prop('muted', true);
-        $("#mute").css("background-image","url('./resources/images/mute_btn/mute.png')");
+        $("#mute").css("background-image", "url('./resources/images/mute_btn/mute.png')");
     }
 });
 // Mute - start
@@ -19,7 +19,7 @@ function goToTop() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-$(window).scroll(function () {
+$(window).scroll(function() {
 
     const mybutton = $('#topBtn');
     // Show back to the top icon
@@ -30,7 +30,7 @@ $(window).scroll(function () {
     }
 
     // Show splash image
-    $('.splash>').each(function () {
+    $('.splash>').each(function() {
         var imagePos = $(this).offset().top;
         var imageHeight = $(this).height();
         var topOfWindow = $(window).scrollTop();
@@ -67,11 +67,11 @@ function flipCard(event) {
 }
 
 function closeCards() {
-    $cards.each(function () {
+    $cards.each(function() {
         $(this)
             .filter('.flip-in')
             .removeClass('flip-in')
-            .queue(function () {
+            .queue(function() {
                 // Force reflow hack
                 var reflow = this.offsetHeight;
                 $(this)
@@ -85,7 +85,7 @@ function closeCards() {
 function openCard($card) {
     $card
         .removeClass('flip-out')
-        .queue(function () {
+        .queue(function() {
             // Force reflow hack
             var reflow = this.offsetHeight;
             $(this)
@@ -96,3 +96,14 @@ function openCard($card) {
 }
 // Cards - end
 
+// Defer video loading - start
+function init() {
+    var vidDefer = document.getElementsByTagName('iframe');
+    for (var i = 0; i < vidDefer.length; i++) {
+        if (vidDefer[i].getAttribute('data-src')) {
+            vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+        }
+    }
+}
+window.onload = init;
+// Defer video loading - end
