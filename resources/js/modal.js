@@ -1,14 +1,16 @@
 $('#modal1').on('hidden.bs.modal', function (e) {
-    // do something...
     $('#modal1 iframe').attr("src", $("#modal1 iframe").attr("src"));
-  });
+});
   
-  $('#modal6').on('hidden.bs.modal', function (e) {
-    // do something...
-    $('#modal6 iframe').attr("src", $("#modal6 iframe").attr("src"));
-  });
+$('#modal2').on('hidden.bs.modal', function (e) {
+    $('#modal2 iframe').attr("src", $("#modal2 iframe").attr("src"));
+});
   
-  $('#modal4').on('hidden.bs.modal', function (e) {
-    // do something...
-    $('#modal4 iframe').attr("src", $("#modal4 iframe").attr("src"));
-  });
+$('#modal3').on('hidden.bs.modal', function (e) {
+    $('#modal3 iframe').attr("src", $("#modal3 iframe").attr("src"));
+});
+
+$('[id^=modal]').on('shown.bs.modal', function (e) {
+  $("video").prop('muted', true);
+  $("#mute").css("background-image", "url('./resources/images/mute_btn/mute.png')");
+});
