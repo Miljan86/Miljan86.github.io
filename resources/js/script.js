@@ -1,6 +1,6 @@
 // Mute - start
-$("video").prop('muted', false);
-$("#mute").css("background-image", "url('./resources/images/mute_btn/unmute.png')");
+$("video").prop('muted', true);
+$("#mute").css("background-image", "url('./resources/images/mute_btn/mute.png')");
 
 $("#mute").click(function() {
     if ($("video").prop('muted')) {
