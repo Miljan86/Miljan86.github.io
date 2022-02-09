@@ -91,6 +91,7 @@ function openCard($card) {
             $(this)
                 .addClass('flip-in')
                 .dequeue();
+
         });
 
 }
